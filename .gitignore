@@ -71,6 +71,7 @@ Thumbs.db
 # 5. 本地废弃脚本与旧图片 (保留在本地，不上传 GitHub)
 # ==========================================
 # 忽略根目录下的旧版 benchmark 脚本
+/benchmark_cuda_full.py
 /benchmark_cuda.py
 /benchmark_cuda_resident.py
 /benchmark_cuda_terminal.py
