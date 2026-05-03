@@ -1,0 +1,80 @@
+# ==========================================
+# 1. C++ / CUDA / CMake 编译产物
+# ==========================================
+# 忽略整个 build 目录
+/build/
+/out/
+/bin/
+
+# 忽略 CMake 临时文件
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# 忽略 C++/CUDA 编译生成的中间目标文件和静态库
+*.o
+*.obj
+*.a
+*.lib
+
+# ==========================================
+# 2. Python & Pybind11 运行缓存
+# ==========================================
+# 忽略 Python 字节码缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 忽略 Pybind11 编译生成的动态链接库（非常关键！）
+# 例如之前根目录下的 finance_calc_core.cpython-310-x86_64-linux-gnu.so
+*.so
+*.pyd
+*.dll
+*.dylib
+
+# 忽略虚拟环境和环境变量文件（防止泄露敏感配置）
+venv/
+env/
+.env
+.venv
+
+# 忽略 Jupyter Notebook 的检查点
+.ipynb_checkpoints/
+
+# ==========================================
+# 3. 性能压测 (Profiling) 与日志文件
+# ==========================================
+# 忽略 Linux perf 工具生成的采样数据
+perf.data
+perf.data.old
+
+# 忽略所有日志文件
+*.log
+
+# ==========================================
+# 4. IDE 与操作系统缓存
+# ==========================================
+# VSCode 配置与缓存
+.vscode/
+
+# JetBrains (PyCharm/CLion) 缓存
+.idea/
+
+# Windows/Mac 系统文件
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# 5. 本地废弃脚本与旧图片 (保留在本地，不上传 GitHub)
+# ==========================================
+# 忽略根目录下的旧版 benchmark 脚本
+/benchmark_cuda.py
+/benchmark_cuda_resident.py
+/benchmark_cuda_terminal.py
+
+# 忽略根目录下的旧图片（最新图片已移至 docs/plots/，所以根目录的可以忽略）
+/performance_curve.png
+/simd_comparison.png

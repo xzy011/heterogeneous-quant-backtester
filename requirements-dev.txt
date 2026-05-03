@@ -1,0 +1,14 @@
+# Development & Profiling Dependencies
+# Install via: pip install -r requirements-dev.txt
+
+# ---- 性能分析工具 (Profiling 阶段) ----
+line-profiler~=4.1.1
+memory-profiler~=0.61.0
+
+# ---- 代码质量 ----
+black~=23.9.1
+ruff~=0.1.6
+
+# ---- 测试框架 ----
+pytest~=7.4.3
+pytest-benchmark~=4.0.0
